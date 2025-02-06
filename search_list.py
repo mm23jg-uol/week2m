@@ -1,14 +1,14 @@
  def search_ordered_list(lst, target):
     sorted_lst = get_ordered_list(lst)
     low = 0
-    high = length of sorted_lst - 1
-     low <= high DO:
+    high = len(sorted_lst) - 1
+
+    while low <= high:
         mid = (low + high) // 2
-        IF sorted_lst[mid] equals target THEN:
-            RETURN True
-        ELSE IF sorted_lst[mid] < target THEN:
-             low = mid + 1
-        ELSE:
-             high = mid - 1
-   
-    RETURN False
+        if sorted_lst[mid] == target:
+            return True
+        elif sorted_lst[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return False
