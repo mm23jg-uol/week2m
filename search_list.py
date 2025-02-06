@@ -1,4 +1,4 @@
-search_ordered_list(lst, target):
+ def search_ordered_list(lst, target):
     sorted_lst = get_ordered_list(lst)
     low = 0
     high = length of sorted_lst - 1
